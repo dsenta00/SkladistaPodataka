@@ -28,24 +28,24 @@
       <FullPath>Apartment.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>State.dim</Name>
-      <FullPath>State.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>User.dim</Name>
-      <FullPath>User.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Payment Date.dim</Name>
       <FullPath>Payment Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Receipt.dim</Name>
+      <FullPath>Receipt.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Room.dim</Name>
       <FullPath>Room.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Receipt.dim</Name>
-      <FullPath>Receipt.dim</FullPath>
+      <Name>State.dim</Name>
+      <FullPath>State.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>User.dim</Name>
+      <FullPath>User.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Visit Period.dim</Name>

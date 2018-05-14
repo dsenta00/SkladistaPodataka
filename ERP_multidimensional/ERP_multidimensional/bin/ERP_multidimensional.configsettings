@@ -1,0 +1,124 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>SKLADISTA</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=WEZEN\SKLADISTA;Integrated Security=SSPI;Initial Catalog=ERP</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"></Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Apartment Ownership</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Apartment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>State</ID>
+      </Dimension>
+      <Dimension>
+        <ID>User</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Payment Date</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Room</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Receipt</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Visit Period</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>ERP</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Apartment</ID>
+            <Partitions>
+              <Partition>
+                <ID>Apartment</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Apartment Ownership</ID>
+            <Partitions>
+              <Partition>
+                <ID>Apartment Ownership</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Receipt</ID>
+            <Partitions>
+              <Partition>
+                <ID>Receipt</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Payment Date</ID>
+            <Partitions>
+              <Partition>
+                <ID>Payment Date</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Room</ID>
+            <Partitions>
+              <Partition>
+                <ID>Room</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>User</ID>
+            <Partitions>
+              <Partition>
+                <ID>User</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>State</ID>
+            <Partitions>
+              <Partition>
+                <ID>State</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Visit</ID>
+            <Partitions>
+              <Partition>
+                <ID>Visit</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Visit Period</ID>
+            <Partitions>
+              <Partition>
+                <ID>Visit Period</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
