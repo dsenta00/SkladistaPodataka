@@ -1,0 +1,1249 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f214b446-907e-4fbe-8f1c-e00c966cebd8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ERP</ID>
+  <Name>ERP</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="c698df4d-2dd0-4225-a6c6-43a9eec7d3aa">
+      <ID>Apartment</ID>
+      <Name>Apartment</Name>
+      <DimensionID>Apartment</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="acb1bac2-696e-44dc-b5b1-aebac62b145b">
+          <AttributeID>Apartment Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61f88c6c-9cc4-4eba-bbe3-37c7c6c54c9b">
+          <AttributeID>Apartment Apartment Ownership Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9a0d438b-0c60-499a-ad31-b5f6ee6554fe">
+      <ID>Apartment Ownership</ID>
+      <Name>Apartment Ownership</Name>
+      <DimensionID>Apartment Ownership</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="44f8b717-8057-47c1-b7b4-04691ac19895">
+          <AttributeID>Apartment Ownership Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d305ae7c-939c-45f3-ac97-3d7c3ab0a360">
+          <AttributeID>Apartment Ownership User State Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6654ed3e-40ca-41cd-a548-da2c47438dce">
+          <AttributeID>Apartment Ownership User Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c252b2ac-2cdc-460d-bee8-879e4c7f2987">
+      <ID>Apartment Ownership User State</ID>
+      <Name>Apartment Ownership User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="99a38a02-7f56-43cb-88ce-2b67c2239402">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fcd41a5b-479a-4814-99a2-06d05539f902">
+      <ID>Receipt</ID>
+      <Name>Receipt</Name>
+      <DimensionID>Receipt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="38b6aff2-56f2-4a6b-983e-e4a94d4447a5">
+          <AttributeID>Receipt Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8456d867-56a2-458b-bc51-52a00a8cd517">
+          <AttributeID>Receipt Payment Date Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cbe40816-1669-4e16-b068-df33a52a4993">
+      <ID>Payment Date</ID>
+      <Name>Payment Date</Name>
+      <DimensionID>Payment Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ff23e4eb-98bb-4175-a767-2fd02da406a0">
+          <AttributeID>Payment Date Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b619ef08-541c-4e52-865f-055ac29e9214">
+      <ID>Room</ID>
+      <Name>Room</Name>
+      <DimensionID>Room</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="65bab592-fb64-483b-b243-5780861d793c">
+          <AttributeID>Room Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a308822-a0ed-4084-ad7a-5b172519e915">
+          <AttributeID>Room Apartment Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4f86ef45-e870-45ef-922d-77510f0c1ee7">
+      <ID>User</ID>
+      <Name>User</Name>
+      <DimensionID>User</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8f07d0bf-7549-4655-9ec6-0b4f737e84b8">
+          <AttributeID>User Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08325fe5-bc49-45db-be8e-9ef642a3d6db">
+          <AttributeID>User State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d2bdb837-29bb-46da-b946-b2ee9194e6c3">
+      <ID>State</ID>
+      <Name>State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="78ec733d-9549-4f39-8a2d-16ed13f04ea3">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="496552a9-a63c-43be-b399-3a82e7286d14">
+      <ID>Visit User</ID>
+      <Name>Visit User</Name>
+      <DimensionID>User</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4dddcf6b-9e2b-42cd-8b10-6b1b49aae9cb">
+          <AttributeID>User Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ecbd5a62-ad5a-450c-9515-eb556e1bfc11">
+          <AttributeID>User State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f1a94157-daff-4760-9743-bb088799d1ae">
+      <ID>Visit Period</ID>
+      <Name>Visit Period</Name>
+      <DimensionID>Visit Period</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="899fad50-ec14-44fe-b25b-4a2739d1ae64">
+          <AttributeID>Visit Period Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="23559d62-18cb-4754-b01e-49e8c9911e9a">
+      <ID>Apartment Apartment Ownership - Apartment Ownership User State</ID>
+      <Name>Apartment Apartment Ownership - Apartment Ownership User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e44f8269-955f-42ac-8fb2-7570644439ba">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bf3cdecc-ebf3-45f2-bb55-23d0edf71ea4">
+      <ID>Apartment Apartment Ownership - Apartment Ownership User - User State</ID>
+      <Name>Apartment Apartment Ownership - Apartment Ownership User - User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="595f7920-fd52-4c1d-887a-e5827806f3df">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="aebec19f-7580-4da9-ab90-75cdb0494213">
+      <ID>Apartment Ownership User - User State</ID>
+      <Name>Apartment Ownership User - User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c3a2b7d7-1730-4cc4-956a-7a7d0f34ffa7">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a47b4aff-6439-4b94-a47f-316a636ab1d5">
+      <ID>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</ID>
+      <Name>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5c4f3932-c4d2-4fbf-a30a-53a716ecaa5c">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a02e5d20-10f4-4796-81db-dc5d2044bf03">
+      <ID>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</ID>
+      <Name>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="02bbe945-21b7-4383-a9d5-a2ed31514abe">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2e2f0c7e-9342-480f-8df4-7d3f34de853e">
+      <ID>Visit User - User State</ID>
+      <Name>Visit User - User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7900ca13-9401-4ef3-be89-9b6b8e03f675">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="49d87dee-23df-4230-ad69-0438993e8276">
+      <ID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</ID>
+      <Name>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9a226afc-7c9d-4cc8-862c-739d2cb58f8d">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="04ac5c3c-813e-4e53-ae97-1988545dc2c4">
+      <ID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User</ID>
+      <Name>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User</Name>
+      <DimensionID>User</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4cd62534-4e26-43af-9fb3-d44886ca1e76">
+          <AttributeID>User Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b68ce244-5e4b-4e2b-9a53-ed4722f5b1f9">
+          <AttributeID>User State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="aa6341eb-31e1-4c93-9ba9-6100ac8c432f">
+      <ID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</ID>
+      <Name>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</Name>
+      <DimensionID>State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="df42142e-ec39-43a7-8f77-72e0bb63d61f">
+          <AttributeID>State Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="1fcbc529-61ed-440a-ae87-c5553b6a6db9">
+      <ID>Apartment</ID>
+      <Name>Apartment</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b9129161-7d42-4064-8a97-0c01c15942ef">
+          <ID>Apartment Count</ID>
+          <Name>Apartment Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="38f86f52-c8f5-4634-91f5-a089b747b758">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0a54ec96-3849-4734-bb7b-ab0a0929c88b">
+              <TableID>dbo_Apartment</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1b9cb851-b14e-4a39-af03-f3569646d8bf">
+          <CubeDimensionID>Apartment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d037e608-88c6-4780-85f9-211de758f715">
+              <AttributeID>Apartment Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a4a7caae-a2a4-46f0-92d0-a2d18fc847f2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e3462e84-71e8-4198-b4d8-cc495a10a0fc">
+                    <TableID>dbo_Apartment</TableID>
+                    <ColumnID>Apartment_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="91a24496-acb1-4035-baf8-27ab33020bcd">
+          <CubeDimensionID>Apartment Ownership</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e27f013d-fc55-439d-961b-78a9a9bf99e7">
+              <AttributeID>Apartment Ownership Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a969a695-677d-4260-9540-5022a26f6faf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="56537ef3-730e-4595-a869-a41a0d0a92c2">
+                    <TableID>dbo_Apartment</TableID>
+                    <ColumnID>Apartment_ApartmentOwnership_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ea7dd99c-f20a-4399-9709-774c1c935109">
+          <CubeDimensionID>Apartment Apartment Ownership - Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f5089f3-3390-44d7-9130-226787f36902">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment Ownership</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Ownership User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="50f2a6ef-ed68-4c89-b576-20d765c24ccc">
+          <CubeDimensionID>User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1b35c37d-76a0-4b15-a2e9-b5b30af82461">
+              <AttributeID>User Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment Ownership</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Ownership User Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e851f899-49d1-4403-b151-5b8af24f5f4c">
+          <CubeDimensionID>Apartment Apartment Ownership - Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5e377a6f-f512-4847-a27d-ddf836c007dd">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>User</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="67078823-715e-4721-ac69-07d7f1d29475">
+      <ID>Apartment Ownership</ID>
+      <Name>Apartment Ownership</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9ae01e70-86d4-4fa6-a46e-6353ca1c9ccb">
+          <ID>Apartment Ownership Count</ID>
+          <Name>Apartment Ownership Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="84b3be5f-4690-40f4-9645-7d2979bbc6c2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9fcf1f3f-03a0-4d76-ae3e-befd478db088">
+              <TableID>dbo_ApartmentOwnership</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e584d5da-ae5f-4dc5-9c0f-ee13fefbb0eb">
+          <CubeDimensionID>Apartment Ownership</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f6b81cc1-6f0c-49c0-bd7c-6e03c4c63916">
+              <AttributeID>Apartment Ownership Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc452c38-0221-4b20-9622-246364ed0548">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f8469e4-1b99-4c00-8858-ca63d74c604b">
+                    <TableID>dbo_ApartmentOwnership</TableID>
+                    <ColumnID>ApartmentOwnership_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0d7994d6-2915-4b27-82a8-68ced7be49dc">
+          <CubeDimensionID>Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="db1f7472-12bd-45f2-a4fa-e0c42c1f324b">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1cffe177-022b-4574-86bc-32ee370dedbf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5b726499-29e3-4158-910d-8ba2126fa498">
+                    <TableID>dbo_ApartmentOwnership</TableID>
+                    <ColumnID>ApartmentOwnership_User_State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6d33428e-5cb2-474e-8a63-0ee8b7132dbf">
+          <CubeDimensionID>User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="81a8c07d-6300-4c52-9b1b-060862e855d6">
+              <AttributeID>User Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="749550d5-97bb-40e1-9a65-e8dbba219a81">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eb314bb8-3f3a-46a3-8c84-ebe2e6cdabdd">
+                    <TableID>dbo_ApartmentOwnership</TableID>
+                    <ColumnID>ApartmentOwnership_UserId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4bf0defb-8169-4ffa-9187-2e54d594bc97">
+          <CubeDimensionID>Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3a882d78-ea58-402b-8934-3363399f9ce2">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>User</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="da370b8a-3fa4-4f8b-898c-b9387e09fadc">
+      <ID>Receipt</ID>
+      <Name>Receipt</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a498ab43-711f-4cd4-b905-273fba4b19b4">
+          <ID>Receipt Amount</ID>
+          <Name>Receipt Amount</Name>
+          <Source dwd:design-time-name="80199168-9f13-4774-9e6c-d980a8982b0b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1b2f2e0f-971e-4bcd-a4bd-4a0ed3631d45">
+              <TableID>dbo_Receipt</TableID>
+              <ColumnID>Receipt_amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e241fd9f-2f67-4ad8-9069-3e5532f62033">
+          <ID>Receipt Count</ID>
+          <Name>Receipt Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="768386f9-f8c3-4236-9ef6-8ac04acac5dd">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b64fa9d7-9847-4665-bbca-4e51a67948b5">
+              <TableID>dbo_Receipt</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="438df541-5bfe-4cd2-9d87-75304706e04e">
+          <CubeDimensionID>Receipt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1fcde421-2374-4d96-9d64-7101d00ef7fa">
+              <AttributeID>Receipt Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="29f9c5b8-fbee-40c5-b993-8f7aa1115155">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a55dbf7b-a87c-404f-a5cc-b720a517fcb7">
+                    <TableID>dbo_Receipt</TableID>
+                    <ColumnID>Receipt_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="68cf6607-787c-4591-b07f-39baf3d63113">
+          <CubeDimensionID>Payment Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="351c9d40-e88d-4b0d-914d-4f2bd0a22459">
+              <AttributeID>Payment Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0f6f06c7-d76b-497d-99aa-e51493fe85c8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4bfcea2a-cdfb-44b8-b07a-6e891c7f7cab">
+                    <TableID>dbo_Receipt</TableID>
+                    <ColumnID>Receipt_PaymentDate_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3cb85556-c35b-459b-9618-3173803094e8">
+      <ID>Payment Date</ID>
+      <Name>Payment Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="10b57486-6b18-4be8-8918-dac61b2de450">
+          <ID>Payment Date Count</ID>
+          <Name>Payment Date Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d11674cc-3177-45c9-bbff-8eb50422643c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c8ee41b0-7450-4247-8905-088c792a9c58">
+              <TableID>dbo_PaymentDate</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e2200bb1-0430-406e-a66c-82f675d4aab3">
+          <CubeDimensionID>Payment Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bddd3d43-0a4b-4ed6-b123-b6a684ea6185">
+              <AttributeID>Payment Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d9df3851-ab6a-47fb-8ccb-baefbe941a18">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f4973a1e-e873-4f65-a975-ebc05afea078">
+                    <TableID>dbo_PaymentDate</TableID>
+                    <ColumnID>PaymentDate_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="999f71ef-4281-46b1-bd4b-2b5c17202a6e">
+      <ID>Room</ID>
+      <Name>Room</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9605878f-02fa-4ccd-876a-3fa8677c0b39">
+          <ID>Room Price</ID>
+          <Name>Room Price</Name>
+          <Source dwd:design-time-name="6d1460f1-88cb-43e9-aee8-088b89a218ca">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0b88af33-81f2-468a-a6b1-d0e1c6d98407">
+              <TableID>dbo_Room</TableID>
+              <ColumnID>Room_price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b7a97692-0f10-4631-aad0-2deb705d4707">
+          <ID>Room Count</ID>
+          <Name>Room Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="18e231e7-fe31-459a-8b11-853fc1e4da8a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5db72caf-64d2-4888-83e6-25e5947e628d">
+              <TableID>dbo_Room</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7987e263-cd70-4516-95bd-c85d88d85890">
+          <CubeDimensionID>Room</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="db92b499-91f8-4656-a6c0-78c5c330c57a">
+              <AttributeID>Room Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="210aef6d-53c5-4761-b35b-374bb8288f33">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d062f426-8eef-49df-a301-78f73e27aa5c">
+                    <TableID>dbo_Room</TableID>
+                    <ColumnID>Room_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="262073a7-2625-4948-97c8-59288add6bb2">
+          <CubeDimensionID>Apartment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c1a04bb3-1a68-44d9-bdd6-2cc8b12a60cc">
+              <AttributeID>Apartment Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="718d95f6-e2fd-42af-b4f1-47bc27445d57">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cea9d785-de92-4582-8ece-31a9f0e9be2b">
+                    <TableID>dbo_Room</TableID>
+                    <ColumnID>Room_Apartment_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="559d9c9d-694a-476f-bf76-d6c8b9b2eac4">
+          <CubeDimensionID>Apartment Ownership</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6d318300-ef14-4475-af4b-bf7f4bd8bbeb">
+              <AttributeID>Apartment Ownership Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Apartment Ownership Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="07adecaa-64be-4c79-9a69-651a255c27cf">
+          <CubeDimensionID>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="46b98cba-a104-4f6d-802e-911867abb26e">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment Ownership</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Ownership User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="56042df7-adaa-4741-8424-2cf305d0b3af">
+          <CubeDimensionID>User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0003aa51-544f-4905-9c3f-2eb0abc918f2">
+              <AttributeID>User Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment Ownership</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Ownership User Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d7b4abf0-c519-446e-979a-503f4891a9f7">
+          <CubeDimensionID>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6ffb6cc5-0014-4e9b-b325-e0cff1c75006">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>User</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="f7908fbf-09c7-42ba-befa-e583a5119a2e">
+      <ID>User</ID>
+      <Name>User</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bba06be4-3961-4df3-aef9-03e41e6b4790">
+          <ID>User Count</ID>
+          <Name>User Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="091d609f-b9b8-4f8a-bb68-b8f92cb2ffe1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1424f352-e194-473a-bdb0-582b1416a330">
+              <TableID>dbo_User</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="70ac596f-4eae-43cb-80c3-47b4bad230fe">
+          <CubeDimensionID>User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4fd3f3e2-451b-4c44-b006-a1e72f2f2ccd">
+              <AttributeID>User Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2bc1170a-975f-437c-9fef-e5798274f11f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61803478-58dd-4113-840f-b5bfe24afe04">
+                    <TableID>dbo_User</TableID>
+                    <ColumnID>User_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ac268676-a8ea-4abf-b530-d8235b00449b">
+          <CubeDimensionID>State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="be38ed05-04fc-41e4-ba02-4cbf4cb8c231">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cbccf2a7-c77c-4493-b419-9dfa0cb0606c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="360422ad-3c9d-426f-be46-2289d03b4bbe">
+                    <TableID>dbo_User</TableID>
+                    <ColumnID>User_StateId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d54df224-4c3b-41cc-aa9b-a540f33cc5ee">
+          <CubeDimensionID>Visit User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f13759c0-7d4e-4525-96aa-774ed0d29a5f">
+              <AttributeID>User Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b7df05c1-0883-4e72-87f0-6a0f30790c74">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5b8e8c16-a430-48b2-ab9c-91bef7f820c3">
+                    <TableID>dbo_User</TableID>
+                    <ColumnID>User_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e0619598-0d43-4ca4-b110-1d7e8e1e8ea3">
+          <CubeDimensionID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="faf146e4-a310-4788-8184-ce48dda3e943">
+              <AttributeID>User Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="621b081b-3499-42eb-8aec-f5ea778d8ddf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1cdce55d-bb80-4ac5-91be-8da5a9fed60a">
+                    <TableID>dbo_User</TableID>
+                    <ColumnID>User_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="089a5c8b-339f-46ef-960e-22a6f6115079">
+      <ID>State</ID>
+      <Name>State</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c0d0eeab-fab0-4572-aef5-434490c3c75f">
+          <ID>State Count</ID>
+          <Name>State Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e3231184-4d9a-492c-93c6-b651b5215e7a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="569a3ce2-d7c6-420c-aec1-2082acce9787">
+              <TableID>dbo_State</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d2427ad8-4a09-4691-8f53-94ac087bb3bf">
+          <CubeDimensionID>State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1b09b34f-cf65-4da6-9233-db7ed5e1cdfc">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0d7527e2-fc2c-4eac-9d1c-1b111c6c2c00">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f6c4e6b-3ef6-4139-a314-48787ac652b6">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0fd65e71-6fd1-41b9-8f23-3075ce6142e1">
+          <CubeDimensionID>Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6b71e464-063d-411e-b731-2c654ebebba4">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="389175d3-ecb4-4ddc-aaca-bb2d6545ee9e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b6026b4c-a172-4a63-a82c-3cffd9660934">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="44eee441-af6a-4a7c-ac20-c2749df85487">
+          <CubeDimensionID>Apartment Apartment Ownership - Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="42149589-9642-4741-8322-fdc08ee67d5a">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4c5b3693-bad9-48b4-bcd5-86e779e44ec0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c4d8b2b4-f3d8-47e2-a3cc-3516575eeb31">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="485f37dc-184d-4aaa-b2d4-541fb7b60a2e">
+          <CubeDimensionID>Apartment Apartment Ownership - Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="01d2fd7b-7f72-4636-94a0-0043aa2fa8a8">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5429c251-8613-4732-a5f6-c654b89205f3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a9bf055b-574d-45e2-9cc7-0e83871d02c8">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f6ef6b62-901a-40f5-b75d-f8132ecb3fd6">
+          <CubeDimensionID>Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3c660498-6a32-43b2-b901-f984c8160a27">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="95e98cec-ba28-4f7b-8a6c-80012928691a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e1bebf28-917e-4b8d-b08a-a314c46411d1">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8a3ac503-1f67-45ec-8bd4-f3f8490cbd67">
+          <CubeDimensionID>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8981204f-ca74-43a7-9ddc-8a98f8d38d98">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5a8df75f-bc21-43b2-9f14-7f133cb59268">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1df1b4dd-b849-4bff-9eb8-abf7e03751e8">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="3059f10e-3d82-43e9-a920-d10172c2da29">
+          <CubeDimensionID>Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ea49154d-9466-461f-a9d1-f785d6f16345">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6fb61b84-4a25-4097-832f-4dc2f90fafdb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="01ef7c13-0996-4df5-9e73-86e69499ee9e">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="19b88a32-024a-46e1-9e28-4f1360cf5bb5">
+          <CubeDimensionID>Visit User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9703dd29-b906-4a3e-a8aa-4818b2a6eda5">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="425c9940-3876-4e8f-8dd8-98a62126fc6c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a1730666-d9b5-4015-8184-d96d499757a8">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="98487342-b2e4-4df2-86a1-e8949d2c5220">
+          <CubeDimensionID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="df1626dc-c8e1-49cf-a200-766e5138f215">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="818be243-5e85-4bae-a052-efd861d0846d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f5292e96-bd76-4506-adc6-6f92156e23df">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="fa6372a1-f5d1-403b-84c5-f00111e31a78">
+          <CubeDimensionID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a313d0ad-2148-460d-af35-b7ac9b54f465">
+              <AttributeID>State Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="920a491f-df5c-4e78-bc94-cf9691b0e4dd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2674d3f1-0b70-4156-a3eb-a2ac0589a896">
+                    <TableID>dbo_State</TableID>
+                    <ColumnID>State_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="4d7c0f8e-f35a-453a-91ee-8084cc2ba1f9">
+      <ID>Visit</ID>
+      <Name>Visit</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2ab9584a-def6-45a8-8354-130af7bacd0c">
+          <ID>Visit Count</ID>
+          <Name>Visit Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="30a5ddab-d1ef-4ff0-a7ee-dc996d0b3995">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e636375c-44f1-4c7b-813e-d7fd1081f5fe">
+              <TableID>dbo_Visit</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fe99af72-5e35-4f99-aa12-18e4ddc58c64">
+          <CubeDimensionID>Receipt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="acacbb90-6846-4935-99b5-b265eef274a5">
+              <AttributeID>Receipt Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7c79a7b7-8cb0-4984-bf73-f92033b60767">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e1f83ad-3863-4a18-8d10-015726e0bdd0">
+                    <TableID>dbo_Visit</TableID>
+                    <ColumnID>Visit_Receipt_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9c704c79-ce23-4ef0-85ae-b86dbd24ff3a">
+          <CubeDimensionID>Visit User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f8297a71-4332-4ded-bc36-c6c2b209235e">
+              <AttributeID>User Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dfc9f6af-bfdd-4a94-8172-b03e13592411">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="28a3f8f7-dc33-4fa8-82ed-80c4bd832d99">
+                    <TableID>dbo_Visit</TableID>
+                    <ColumnID>Visit_User_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9bc6a80b-fc04-443f-b1e9-4333f827dabb">
+          <CubeDimensionID>Visit Period</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="77e0f2aa-bfd3-4487-9d66-a3bb9727ef09">
+              <AttributeID>Visit Period Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d61b5d96-2904-418d-b672-a42d0c552a04">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30916f17-5f44-44c4-abda-d250727b00fd">
+                    <TableID>dbo_Visit</TableID>
+                    <ColumnID>Visit_VisitPeriod_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2cb3976f-2842-4732-b578-c10dfc1cc805">
+          <CubeDimensionID>Room</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4765e91d-469f-41a2-845f-6166a5d0421d">
+              <AttributeID>Room Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8b9c9c91-f17f-43ee-95bf-75b4619aee75">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="79b88b01-62f3-4f1c-b8e4-c8f2176cd529">
+                    <TableID>dbo_Visit</TableID>
+                    <ColumnID>Visit_Room_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4d4e36c1-6737-4987-a10c-2478ca082605">
+          <CubeDimensionID>Payment Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8012600a-2142-417d-9a58-44fb381e2c59">
+              <AttributeID>Payment Date Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Receipt</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Receipt Payment Date Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="03b67b02-33d3-44fc-9ae6-fa2a6cab28af">
+          <CubeDimensionID>Visit User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="82b4c2d0-8b14-4784-b0e4-077ba9ed76dd">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Visit User</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="08edd530-aea2-4189-a046-e60fb50627d2">
+          <CubeDimensionID>Apartment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e55e6bd4-baef-4021-a11d-997dc5b01112">
+              <AttributeID>Apartment Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Room</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Room Apartment Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="53d3066c-4571-4f0d-b919-a91d78fd39df">
+          <CubeDimensionID>Apartment Ownership</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f82be076-b293-471f-8b23-71dad6cb29c4">
+              <AttributeID>Apartment Ownership Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Apartment Ownership Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8825ef87-c5e1-4f1c-a22d-a68bdbedd891">
+          <CubeDimensionID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="462cae1b-10a8-4626-b8fa-8c3f75980cc6">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment Ownership</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Ownership User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4bc736c6-96a4-4baf-92bc-673b27a33624">
+          <CubeDimensionID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="936b040b-16c4-47b8-ae87-4f6b811e0ada">
+              <AttributeID>User Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Apartment Ownership</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Apartment Ownership User Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="f1e19a31-fd92-4f6c-936c-4b5e4986c459">
+          <CubeDimensionID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User - User State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="473bd312-b82c-4f21-8fb5-0b85f69a2ce1">
+              <AttributeID>State Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Visit Room - Room Apartment - Apartment Apartment Ownership - Apartment Ownership User</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>User State Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="24458c2f-c271-4d48-9fd4-f5c9f2d3b3b2">
+      <ID>Visit Period</ID>
+      <Name>Visit Period</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="d4688a05-b7b1-474e-a21f-8732032fad2f">
+          <ID>Visit Period Count</ID>
+          <Name>Visit Period Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4e5c2f4c-d447-48c3-9373-0d8d2b03bbfc">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6a1c2e03-7b94-4965-b525-7f2e81038dd1">
+              <TableID>dbo_VisitPeriod</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="43f5862c-ba34-455f-826e-cf3c7e612cd6">
+          <CubeDimensionID>Visit Period</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ee282e4c-1472-4b78-857f-5eae8fa022d2">
+              <AttributeID>Visit Period Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="82e58141-8f14-4bfc-b5c9-c249c90505cd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7a859be2-e08f-468c-b7ee-118c0b735585">
+                    <TableID>dbo_VisitPeriod</TableID>
+                    <ColumnID>VisitPeriod_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="b55e89a1-d403-49ef-8336-8b269e6645ba">
+    <DataSourceViewID>ERP</DataSourceViewID>
+  </Source>
+</Cube>
