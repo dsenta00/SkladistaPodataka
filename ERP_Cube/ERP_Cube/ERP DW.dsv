@@ -1,0 +1,144 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2d90d627-7616-4fae-b5b7-afcb0f0aa21f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ERP DW</ID>
+  <Name>ERP DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>ERP DW_ds</DataSourceID>
+  <Schema>
+    <xs:schema id="ERP_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="ERP_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e215f988-883e-4bbe-afbc-a9e427f1bcbc">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FactVisit" msprop:design-time-name="87afbe5c-3c54-4f6d-8763-dec30366d5b6" msprop:DbTableName="FactVisit" msprop:FriendlyName="FactVisit" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Visit_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b073f8ed-efb9-4628-9b4f-47506bcc8a61" msprop:DbColumnName="Visit_id" msprop:FriendlyName="Visit_id" type="xs:int" />
+                  <xs:element name="FK_Receipt_Id_dim" msprop:design-time-name="6926b2b6-4e05-4049-aa06-870c2a903421" msprop:DbColumnName="FK_Receipt_Id_dim" msprop:FriendlyName="FK_Receipt_Id_dim" type="xs:int" />
+                  <xs:element name="FK_PaymentDate_Id_dim" msprop:design-time-name="dd0d0380-bce1-444f-8b8d-600f3257fbee" msprop:DbColumnName="FK_PaymentDate_Id_dim" msprop:FriendlyName="FK_PaymentDate_Id_dim" type="xs:int" />
+                  <xs:element name="FK_VisitPeriod_Id_dim" msprop:design-time-name="ae1bd075-32df-43d2-b213-2451d796dcf7" msprop:DbColumnName="FK_VisitPeriod_Id_dim" msprop:FriendlyName="FK_VisitPeriod_Id_dim" type="xs:int" />
+                  <xs:element name="FK_State_Id_dim" msprop:design-time-name="efacd294-c2d2-444a-a5d8-605647bebdd7" msprop:DbColumnName="FK_State_Id_dim" msprop:FriendlyName="FK_State_Id_dim" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_PaymentDate" msprop:design-time-name="5a265678-23d4-4072-9135-ec6dab8d752b" msprop:DbTableName="PaymentDate" msprop:FriendlyName="PaymentDate" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PaymentDate_id_dim" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a3db54e6-1ac9-46eb-9cda-d2281fe5e735" msprop:DbColumnName="PaymentDate_id_dim" msprop:FriendlyName="PaymentDate_id_dim" type="xs:int" />
+                  <xs:element name="PaymetDate_id_old" msprop:design-time-name="af7ebc83-8a08-4518-bb60-f1df27fb66a7" msprop:DbColumnName="PaymetDate_id_old" msprop:FriendlyName="PaymetDate_id_old" type="xs:int" />
+                  <xs:element name="PaymentDate_date" msprop:design-time-name="62432ebc-44e3-4321-b129-109ba9309c02" msprop:DbColumnName="PaymentDate_date" msprop:FriendlyName="PaymentDate_date" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Receipt" msprop:design-time-name="bd1be415-c9ec-4311-9ce0-6e83daebf756" msprop:DbTableName="Receipt" msprop:FriendlyName="Receipt" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Receipt_id_dim" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d9943d11-e2d3-44ac-8eb9-efff8c8a6ad3" msprop:DbColumnName="Receipt_id_dim" msprop:FriendlyName="Receipt_id_dim" type="xs:int" />
+                  <xs:element name="Receipt_id_old" msprop:design-time-name="aa0c9781-24d0-4a5f-8a75-56eee0a7ada0" msprop:DbColumnName="Receipt_id_old" msprop:FriendlyName="Receipt_id_old" type="xs:int" />
+                  <xs:element name="Receipt_amount" msprop:design-time-name="f1568685-14f3-4ce9-b188-da56f02bcc36" msprop:DbColumnName="Receipt_amount" msprop:FriendlyName="Receipt_amount" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_State" msprop:design-time-name="ec1ae49b-784c-4448-ab32-504f39ba1ff2" msprop:DbTableName="State" msprop:FriendlyName="State" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="State_id_dim" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="86f904ea-4748-4ce2-b395-6c04787fc70e" msprop:DbColumnName="State_id_dim" msprop:FriendlyName="State_id_dim" type="xs:int" />
+                  <xs:element name="State_id_old" msprop:design-time-name="0c5c1522-b8ce-4e50-b624-8b4d9a27e2e8" msprop:DbColumnName="State_id_old" msprop:FriendlyName="State_id_old" type="xs:int" />
+                  <xs:element name="State_name" msprop:design-time-name="3d559816-995a-4b4e-98b3-6dd81ca95be9" msprop:DbColumnName="State_name" msprop:FriendlyName="State_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_VisitPeriod" msprop:design-time-name="c35afc35-2da6-4042-8fad-adc60c71a7ff" msprop:DbTableName="VisitPeriod" msprop:FriendlyName="VisitPeriod" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="VisitPeriod_id_dim" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ff2e6300-3857-4139-95d5-1e5a0296ef57" msprop:DbColumnName="VisitPeriod_id_dim" msprop:FriendlyName="VisitPeriod_id_dim" type="xs:int" />
+                  <xs:element name="VisitPeriod_id_old" msprop:design-time-name="695a0917-1e09-44ce-96a8-18bcaa4b6aa4" msprop:DbColumnName="VisitPeriod_id_old" msprop:FriendlyName="VisitPeriod_id_old" type="xs:int" />
+                  <xs:element name="VisitPeriod_from" msprop:design-time-name="734ef858-1791-4a19-a185-2334891f1636" msprop:DbColumnName="VisitPeriod_from" msprop:FriendlyName="VisitPeriod_from" type="xs:dateTime" />
+                  <xs:element name="VisitPeriod_to" msprop:design-time-name="eff42ae6-6a40-4378-a1cd-5bc82217fbbc" msprop:DbColumnName="VisitPeriod_to" msprop:FriendlyName="VisitPeriod_to" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactVisit" />
+          <xs:field xpath="Visit_id" />
+        </xs:unique>
+        <xs:unique name="dbo_PaymentDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_PaymentDate" />
+          <xs:field xpath="PaymentDate_id_dim" />
+        </xs:unique>
+        <xs:unique name="dbo_Receipt_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Receipt" />
+          <xs:field xpath="Receipt_id_dim" />
+        </xs:unique>
+        <xs:unique name="dbo_State_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_State" />
+          <xs:field xpath="State_id_dim" />
+        </xs:unique>
+        <xs:unique name="dbo_VisitPeriod_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_VisitPeriod" />
+          <xs:field xpath="VisitPeriod_id_dim" />
+        </xs:unique>
+        <xs:keyref name="FK_FactVisit_PaymentDate" refer="dbo_PaymentDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactVisit" />
+          <xs:field xpath="FK_PaymentDate_Id_dim" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactVisit_VisitPeriod" refer="dbo_VisitPeriod_Constraint1">
+          <xs:selector xpath=".//dbo_FactVisit" />
+          <xs:field xpath="FK_VisitPeriod_Id_dim" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactVisit_Receipt" refer="dbo_Receipt_Constraint1">
+          <xs:selector xpath=".//dbo_FactVisit" />
+          <xs:field xpath="FK_Receipt_Id_dim" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactVisit_State" refer="dbo_State_Constraint1">
+          <xs:selector xpath=".//dbo_FactVisit" />
+          <xs:field xpath="FK_State_Id_dim" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <ERP_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>
